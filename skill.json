@@ -1,0 +1,44 @@
+{
+  "name": "genpark-flow-matching-latent-diffusion-image-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 12B-parameter rectified flow matching latent diffusion image and typography synthesizer with photorealistic anatomical consistency.",
+  "author": "genpark",
+  "category": "generative-media",
+  "tags": [
+    "flow-matching",
+    "latent-diffusion",
+    "flux-architecture",
+    "typography-synthesis",
+    "black-forest-labs"
+  ],
+  "inputs": {
+    "prompt_text": {
+      "type": "string"
+    },
+    "resolution_width": {
+      "type": "integer"
+    },
+    "resolution_height": {
+      "type": "integer"
+    },
+    "inference_steps": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "generation_id": {
+      "type": "string"
+    },
+    "text_render_accuracy_score_pct": {
+      "type": "number"
+    },
+    "output_tensor_artifact_url": {
+      "type": "string"
+    },
+    "photorealistic_anatomical_consistency": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
